@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<title>StudyForge AI — Teman Persiapan Ujian</title>
+<style>
+:root{--bg:#050713;--panel:#0c1024;--panel2:#111633;--line:#29336a;--text:#f2f3ff;--muted:#b0b8d9;--accent:#7c5cff;--accent2:#28dfff;--pink:#ff3ebf;--green:#45f5bf;--gold:#ffc857}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#20104d 0%,transparent 35%),radial-gradient(ellipse at 90% 10%,#062a4b 0%,transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+.wrap{max-width:1100px;margin:auto;padding:24px 16px 60px}.hero{padding:22px 0 20px;position:relative}.eyebrow{color:var(--accent2);font-size:.78rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.02;margin:10px 0;background:linear-gradient(90deg,#fff,#9ceaff 45%,#c39cff 80%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 35px #6b5cff22}.hero p{color:var(--muted);max-width:720px;margin:12px 0}.pill{display:inline-flex;border:1px solid #39427d;background:#0d1430;border-radius:99px;padding:6px 11px;color:#d9ddff;font-size:.8rem;margin:4px 4px 0 0;box-shadow:inset 0 0 14px #6c5cff0b}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:linear-gradient(145deg,rgba(14,19,43,.97),rgba(7,11,27,.97));border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 0 0 1px #7c5cff08,0 12px 35px #0005;position:relative;overflow:hidden}.panel:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2),var(--pink));opacity:.9}.panel h2{font-size:1.08rem;margin:0 0 12px}.sub{font-size:.9rem;color:var(--muted);margin-top:-5px;margin-bottom:14px}label{display:block;font-size:.9rem;font-weight:750;margin:13px 0 7px}input,textarea,select{width:100%;border:1px solid #303b70;border-radius:11px;background:#070c1d;color:var(--text);padding:12px;font:inherit;outline:none}textarea{resize:vertical;min-height:180px}input:focus,textarea:focus,select:focus{border-color:var(--accent2);box-shadow:0 0 0 3px #28dfff20}input[type=range]{padding:0;accent-color:var(--accent)}.row{display:flex;gap:10px}.row>*{flex:1;min-width:0}.btn{border:1px solid #8b7cff;border-radius:11px;padding:12px 15px;background:linear-gradient(100deg,#5b3df5,#287dff);color:white;font-weight:850;font:inherit;cursor:pointer;box-shadow:0 0 20px #684aff2a;transition:transform .15s,filter .15s}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}.btn:disabled{opacity:.5;cursor:wait;transform:none}.btn.secondary{background:#141b39;color:var(--text);border:1px solid #3c477e;box-shadow:none}.btn.green{background:linear-gradient(100deg,#00bfa5,#16b8ef);color:#041321;border:0}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}.actions .btn{flex:1}.hint{font-size:.82rem;color:var(--muted);margin-top:9px}.status{margin-top:12px;color:var(--accent2);font-size:.9rem;min-height:1.3em}.result{margin-top:18px}.result-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.result-body{white-space:pre-wrap;overflow-wrap:anywhere;color:#e9edff;background:#060a18;border:1px solid #303b70;border-radius:13px;padding:17px;min-height:150px}.result-body:empty:before{content:"Hasil misi belajarmu bakal muncul di sini. Siapkan fokus, Warrior.";color:#7e89b2}.footer{font-size:.82rem;color:var(--muted);padding:18px 3px}.small{font-size:.82rem;color:var(--muted)}.check{display:flex;align-items:center;gap:9px;font-weight:500}.check input{width:auto}.notice{border-left:3px solid var(--accent2);padding:10px 12px;background:#081f31;border-radius:0 9px 9px 0;color:#c9f8ff;font-size:.85rem;margin-top:14px}.motto{margin:14px 0 18px;padding:15px 17px;border:1px solid #453c8e;border-radius:14px;background:linear-gradient(100deg,#181044aa,#08243aaa);color:#e9ddff;font-weight:750;letter-spacing:.02em}.motto strong{color:var(--accent2)}.mission-tag{display:inline-block;color:var(--gold);font-size:.78rem;font-weight:900;letter-spacing:.1em;margin-bottom:4px}.panel h2:before{content:"✦ ";color:var(--accent2)}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.wrap{padding:18px 12px 40px}.panel{padding:15px}.row{flex-direction:column;gap:0}.hero{padding-top:10px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">🎮 PLAYER 01 · STUDY MODE ACTIVATED</div>
+    <h1>StudyForge <span style="color:var(--accent)">AI</span></h1>
+    <div class="motto"><span class="mission-tag">MAIN QUEST</span><br>LEVEL UP YOUR MIND. <strong>DOMINATE YOUR EXAM.</strong><br><span class="small">Setiap soal yang salah adalah EXP. Pelajari, perbaiki, lalu naik level.</span></div>
+    <p>Masukkan materi atau link YouTube. Ubah jadi rangkuman, latihan soal, dan simulasi ujian. Biar yang panik cuma soal pilihan ganda, bukan orangnya.</p>
+    <span class="pill">⚡ Quest: Rangkuman</span><span class="pill">▶ Quest: YouTube</span><span class="pill">🎯 Quest: Generator Soal</span><span class="pill">🏆 Quest: Simulasi Ujian</span>
+  </header>
+
+  <div class="grid">
+    <section class="panel">
+      <h2>01 / Masukkan Item Quest</h2>
+      <p class="sub">Masukkan materi untuk mengubahnya menjadi EXP pengetahuan.</p>
+      <label for="apiKey">Gemini API key</label>
+      <input id="apiKey" type="password" placeholder="Tempel API key milikmu" autocomplete="off">
+      <div class="hint">Key hanya disimpan di sesi halaman ini. Jangan masukkan key ke web publik atau kirim ke orang lain.</div>
+      <label for="youtube">Link YouTube (opsional)</label>
+      <input id="youtube" type="url" placeholder="https://www.youtube.com/watch?v=...">
+      <label for="material">Materi dari guru / catatan</label>
+      <textarea id="material" placeholder="Tempel materi di sini. Bisa berupa catatan, teks buku, kisi-kisi, definisi, rumus, dan sebagainya..."></textarea>
+      <div class="row">
+        <div>
+          <label for="fileInput">Atau buka file teks</label>
+          <input id="fileInput" type="file" accept=".txt,.md,.csv,.json">
+        </div>
+        <div>
+          <label for="subject">Mata pelajaran</label>
+          <input id="subject" placeholder="Contoh: Informatika">
+        </div>
+      </div>
+      <div class="notice">Untuk video YouTube, gunakan video publik. AI memproses video lewat Gemini API; hasil bisa keliru, jadi cocokkan lagi dengan materi guru.</div>
+    </section>
+
+    <section class="panel">
+      <h2>02 / Atur Mode Training</h2>
+      <p class="sub">Pilih misi dan tingkat kesulitan. Tidak ada level-up tanpa latihan.</p>
+      <label for="mode">Mode belajar</label>
+      <select id="mode">
+        <option value="summary">Buat rangkuman</option>
+        <option value="questions">Buat soal + kunci + pembahasan</option>
+        <option value="quiz">Simulasi ujian (soal tanpa kunci dulu)</option>
+        <option value="flashcards">Buat flashcard tanya-jawab</option>
+        <option value="explain">Jelaskan materi dari dasar</option>
+      </select>
+      <div class="row">
+        <div>
+          <label for="count">Jumlah soal / kartu</label>
+          <select id="count">
+            <option>5</option><option selected>10</option><option>15</option><option>20</option><option>25</option>
+          </select>
+        </div>
+        <div>
+          <label for="difficulty">Kesulitan</label>
+          <select id="difficulty">
+            <option value="Campuran">Campuran</option>
+            <option value="Mudah">Mudah</option>
+            <option value="Sedang">Sedang</option>
+            <option value="Sulit">Sulit</option>
+          </select>
+        </div>
+      </div>
+      <label for="format">Jenis soal</label>
+      <select id="format">
+        <option value="Pilihan ganda dan uraian">Campuran: pilihan ganda + uraian</option>
+        <option value="Pilihan ganda">Pilihan ganda saja</option>
+        <option value="Uraian">Uraian saja</option>
+        <option value="Benar atau salah">Benar / salah</option>
+      </select>
+      <label for="focus">Fokus khusus (opsional)</label>
+      <input id="focus" placeholder="Contoh: rumus, istilah penting, atau kisi-kisi guru">
+      <div class="actions">
+        <button id="generate" class="btn green">⚡ Mulai Quest</button>
+        <button id="clear" class="btn secondary" type="button">Bersihkan</button>
+      </div>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <p class="hint">Perlu koneksi internet dan Gemini API key. Penggunaan API dapat memiliki batas pemakaian atau biaya sesuai akun dan model.</p>
+    </section>
+  </div>
+
+  <section class="panel result">
+    <div class="result-head">
+      <h2>03 / Hasil Quest</h2>
+      <div class="actions" style="margin:0">
+        <button id="copy" class="btn secondary" type="button">Salin hasil</button>
+        <button id="download" class="btn secondary" type="button">Unduh .txt</button>
+      </div>
+    </div>
+    <div id="output" class="result-body" aria-live="polite"></div>
+    <div class="footer">STRATEGI PRO: pahami rangkuman, lawan soal tanpa melihat catatan, lalu pelajari kesalahanmu. Jangan cuma farming hafalan, kuasai konsepnya. AI bisa salah atau mengarang detail, jadi verifikasi fakta dan kunci jawaban sebelum menghafal.</div>
+  </section>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const apiKey = $('apiKey'), youtube = $('youtube'), material = $('material');
+const output = $('output'), status = $('status'), generate = $('generate');
+$('fileInput').addEventListener('change', async e => {
+  const file = e.target.files && e.target.files[0];
+  if (!file) return;
+  try { material.value = await file.text(); status.textContent = `File "${file.name}" berhasil dimuat.`; }
+  catch { status.textContent = 'File tidak bisa dibaca. Coba file .txt atau .md.'; }
+});
+$('clear').addEventListener('click', () => {
+  material.value=''; youtube.value=''; $('subject').value=''; $('focus').value='';
+  $('fileInput').value=''; output.textContent=''; status.textContent='';
+});
+$('copy').addEventListener('click', async () => {
+  if (!output.textContent.trim()) { status.textContent='Belum ada hasil untuk disalin.'; return; }
+  try { await navigator.clipboard.writeText(output.textContent); status.textContent='Hasil disalin.'; }
+  catch { status.textContent='Gagal menyalin. Pilih teks hasil lalu salin manual.'; }
+});
+$('download').addEventListener('click', () => {
+  if (!output.textContent.trim()) { status.textContent='Belum ada hasil untuk diunduh.'; return; }
+  const blob = new Blob([output.textContent], {type:'text/plain;charset=utf-8'});
+  const url = URL.createObjectURL(blob), a = document.createElement('a');
+  a.href=url; a.download='StudyForge-quest-result.txt'; a.click(); URL.revokeObjectURL(url);
+});
+function getPrompt() {
+ const mode=$('mode').value, count=$('count').value, diff=$('difficulty').value;
+ const format=$('format').value, subject=$('subject').value.trim() || 'belum ditentukan';
+ const focus=$('focus').value.trim();
+ const base=`Kamu adalah tutor belajar yang teliti untuk siswa SMK kelas 10 di Indonesia. Mata pelajaran: ${subject}. Gunakan bahasa Indonesia yang jelas, sederhana, dan terstruktur. Dasarkan jawaban hanya pada materi yang tersedia dan pengetahuan yang relevan. Jangan mengarang fakta seolah-olah ada di sumber. Jika sumber tidak cukup, sebutkan keterbatasannya. Tandai bagian yang perlu diverifikasi. ${focus ? 'Fokus khusus: '+focus+'.' : ''}`;
+ if(mode==='summary') return `${base}\nBuat rangkuman untuk persiapan ujian. Susun: (1) gambaran singkat, (2) konsep dan istilah penting, (3) rumus/langkah bila ada, (4) contoh sederhana, (5) hal yang wajib diingat, (6) 5 pertanyaan cek pemahaman beserta jawaban singkat. Jangan terlalu bertele-tele.`;
+ if(mode==='questions') return `${base}\nBuat ${count} soal latihan dengan kesulitan ${diff}. Jenis: ${format}. Beri nomor rapi. Untuk pilihan ganda, sediakan opsi A-D dan hanya satu jawaban terbaik. Setelah semua soal, berikan kunci jawaban dan pembahasan singkat tiap nomor. Pastikan soal dapat dijawab dari sumber; jangan membuat detail yang tidak didukung materi.`;
+ if(mode==='quiz') return `${base}\nBuat simulasi ujian ${count} soal, kesulitan ${diff}, jenis ${format}. Tampilkan soal saja tanpa kunci atau pembahasan dulu. Untuk pilihan ganda gunakan opsi A-D. Di akhir, minta siswa mengirim jawaban dengan format misalnya 1A, 2C, 3B. Jangan bocorkan jawaban.`;
+ if(mode==='flashcards') return `${base}\nBuat ${count} flashcard untuk belajar aktif. Format setiap kartu: KARTU n, DEPAN (pertanyaan/istilah), BELAKANG (jawaban ringkas). Utamakan konsep inti dan kesalahan umum. Tingkat kesulitan ${diff}.`;
+ return `${base}\nJelaskan materi dari dasar dengan analogi sederhana dan contoh yang relevan untuk siswa SMK. Susun dari konsep paling dasar ke yang lebih sulit, lalu beri ringkasan dan ${count} pertanyaan latihan tingkat ${diff} beserta jawabannya.`;
+}
+function youtubeIdValid(url) {
+ try { const u = new URL(url); return (u.hostname==='youtube.com'||u.hostname.endsWith('.youtube.com')||u.hostname==='www.youtube.com'||u.hostname==='youtu.be'||u.hostname==='m.youtube.com') && url.startsWith('https://'); } catch { return false; }
+}
+generate.addEventListener('click', async () => {
+ const key=apiKey.value.trim(), text=material.value.trim(), video=youtube.value.trim();
+ if(!key){status.textContent='Masukkan Gemini API key terlebih dahulu.';apiKey.focus();return;}
+ if(!text&&!video){status.textContent='Masukkan teks materi atau link YouTube.';return;}
+ if(video&&!youtubeIdValid(video)){status.textContent='Periksa link YouTube. Gunakan tautan HTTPS dari video publik.';return;}
+ generate.disabled=true; generate.textContent='Memproses...'; status.textContent='AI sedang membaca sumber dan menyusun bahan belajar. Ini bisa memerlukan waktu.';
+ output.textContent='';
+ try{
+   const parts=[];
+   if(text) parts.push({text:'MATERI DARI PENGGUNA:\n'+text});
+   if(video) parts.push({file_data:{file_uri:video}});
+   parts.push({text:getPrompt()});
+   const response=await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent',{
+     method:'POST',
+     headers:{'Content-Type':'application/json','x-goog-api-key':key},
+     body:JSON.stringify({contents:[{parts}],generationConfig:{temperature:0.4,maxOutputTokens:8192}})
+   });
+   const data=await response.json();
+   if(!response.ok){
+     const msg=data?.error?.message || `Permintaan gagal (HTTP ${response.status}).`;
+     throw new Error(msg);
+   }
+   const result=(data.candidates||[]).flatMap(c=>c.content?.parts||[]).map(p=>p.text||'').filter(Boolean).join('\n').trim();
+   if(!result) throw new Error('AI tidak mengembalikan teks. Coba lagi atau gunakan materi yang lebih singkat.');
+   output.textContent=result;
+   status.textContent='Quest selesai! EXP pengetahuan bertambah. Cocokkan hasil dengan materi guru.';
+ }catch(err){
+   status.textContent='Belum berhasil diproses.';
+   output.textContent='Terjadi kendala: '+(err.message||'Kesalahan tidak diketahui')+'\n\nPeriksa API key, koneksi internet, kuota akun, dan apakah video YouTube bersifat publik. Jika key pernah dibagikan ke orang lain, cabut dan buat key baru.';
+ }finally{generate.disabled=false;generate.textContent='⚡ Mulai Quest';}
+});
+</script>
+</body>
+</html>
